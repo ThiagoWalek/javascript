@@ -1,0 +1,21 @@
+@charset "UTF-8";
+h1 {
+    font-weight: normal;  
+    text-align: center;
+    font-weight: bold;  
+}
+p {
+    font-size: 20px;
+}
+div#pri {
+    border-color: black;
+    border-width: 2px;
+    box-shadow: 0px 0px 0px black;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+}
+div#foto{
+    height: 100px;
+    width: 100px;
+}

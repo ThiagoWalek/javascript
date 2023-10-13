@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pisca-pisca</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(184, 184, 184);
+            margin: 300px auto;
+            display: inline-block;
+        }
+        input {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="lampada"></div>
+    <input type="text" id="txt1">
+    <input type="button" value="Mudar cor" onclick="mudarcor()">
+    <script>
+        function mudarcor(){
+        var txt1 = window.document.querySelector('input#txt1')
+        var d = window.document.querySelector('div#lampada')
+       if(txt1 == ''){
+            d.style.background = 'rgb(184, 184, 184)'
+       }else if(txt1 == 'azul'){
+            d.style.background = 'blue'
+       }
+    }
+    </script>
+</body>
+</html>

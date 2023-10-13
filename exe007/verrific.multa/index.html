@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verific.Multa</title>
+    <style>
+        div {
+            height: 200px;
+            width: 700px;
+            margin: 250px auto 0px auto;
+            text-align: center;
+            padding: 10px;
+        }
+        strong {
+            background-color: rgb(174, 174, 174);
+            padding: 2px;
+            font-weight: bold;
+        }
+        p {
+            width: 600px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Quantos Km/h estava andando:</h1>
+        <input type="txt1" id="txt1">
+        <input type="button" value="verificar" onclick="verificar()">
+        <p id="res">Você não está sendo verificado pois ainda não digitou sua velocidade em Km/h</p>
+    </div>
+    <script>
+        function verificar(){
+            var txt1 = window.document.getElementById('txt1')
+            var s = window.document.getElementById('res')
+            var n1 = Number(txt1.value)
+            var fal = 71 - n1
+
+            if ( n1 <= 60 ) {
+                s.innerHTML = '<p>Boa Viagem!</p>'
+            }else if(n1 > 60 && n1 < 71){
+                s.innerHTML = `<p>Cuidado faltam <strong>${fal}Km/h</strong> para exceder a velocidade maxima</p>`
+            }else{
+                s.innerHTML = '<p>Multado!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
