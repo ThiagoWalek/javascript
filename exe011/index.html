@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclas</title>
+    <style>
+        body {
+            background-color: gray;
+            padding-left: 10px;
+        }
+        div#q1 {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(199, 199, 199);
+            border: 1px solid black;
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.500);
+            text-align: center;
+            font-size: 2em;
+            display: inline-block;
+            text-align: center;
+        }
+        div.botao {
+            display: inline-block;
+            height: 90px;
+            width: 190px;
+            min-width: 190px;
+            border-radius: 70px;
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            background-color: gray;
+            color: white;
+            font-size: 2em;
+            border: 2px solid black;
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.500);
+        }
+        div#botao:active {
+            background-color: rgb(159, 159, 159);
+        }
+    </style>
+</head>
+<body>
+    <h1>Botão teste</h1>
+    <div id="q1">Este campo será a cor que o botao deverá mudar</div>
+    <div class="botao" onclick="clicou()">
+Botao
+    </div>
+    <script>
+        var quantidade = 0
+        function clicou(){
+                var q1 = window.document.getElementById('q1') 
+                if(quantidade%2 == 1){
+                    q1.style.background = 'rgb(199, 199, 199'
+                }else{
+                    q1.style.background = 'white'
+                }
+                quantidade++
+        }
+    </script>
+</body>
+</html>
