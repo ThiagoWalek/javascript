@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#cabo {
+    width: 2vw;
+    height: 5vw;
+    position: relative;
+    left: 50%;
+    background-color: black;
+}
+div#lampada {
+    background-color: gray;
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    top: 100%;
+    right: 180%;
+}
+div#iluminacao {
+    /* position: absolute;
+    left: 13%;
+    top: 40%;
+    border-bottom: 20vw solid #c1c1c1;
+    transform: translateY(-100%);
+    border-left: 170px solid transparent;
+    border-right: 170px solid transparent; 
+    /* border-radius: 100% 100% 0% 0%;
+    clip-path: polygon(0 100%, 100% 100%, 75% 0, 45% 0); */
+    /* height: 50vh; */ 
+    border-radius: 160% 00% 0 0 ;
+    width: 10vw;
+    height: 10vh;
+    background-color: red;
+}
